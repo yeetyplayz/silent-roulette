@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
     public GameObject startQuitUi;
     public GameObject mainUi;
     public GameObject mainQuitUi;
+    public GameObject mainSettingsUi;
     private void Start()
     {
         DisableUi(true);
@@ -24,7 +25,6 @@ public class UIManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Y)) { Application.Quit(); Debug.Log("U have Quit the game"); }
             if (Input.GetKeyDown(KeyCode.N)) { ChangeUi(mainUi); }
         }
-
     }
     public void ChangeUi(GameObject to)
     {
