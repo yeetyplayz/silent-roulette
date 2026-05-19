@@ -114,6 +114,11 @@ public class BlackjackCameraController : MonoBehaviour
         }
     }
 
+    public void RestoreTransformToInternalState()
+    {
+        ApplyRotation(_yaw, _pitch);
+    }
+
     // -----------------------------------------------------------------------
     //  Public API — called by SeatSnapManager or game logic
     // -----------------------------------------------------------------------
