@@ -5,6 +5,7 @@ using UnityEngine;
 /// <summary>
 /// Each cycle: every active player gets exactly one action (hit or stand),
 /// then the dealer takes one action. Repeats until all players and dealer are done.
+/// After resolution, waits for roulette to fully complete before starting next round.
 ///
 /// Physical seating layout:
 ///         Dealer
@@ -22,9 +23,13 @@ public class RoundManager : MonoBehaviour
     [Header("Dealer")]
     public DealerAI dealer;
 
+    [Header("Roulette")]
+    public RouletteManager rouletteManager;
+
     private readonly int[] _physicalOrder = { 0, 1, 3, 2 };
 
     private bool _waitingForHuman;
+    private bool _humanTurnActive = false;
 
     public System.Action<int> OnPlayerTurnStarted;
     public System.Action OnDealerTurnStarted;
@@ -42,6 +47,14 @@ public class RoundManager : MonoBehaviour
         while (GetActivePlayers().Count > 1)
         {
             yield return StartCoroutine(RunRound());
+
+            // Wait for roulette to fully resolve before checking survivors or continuing
+            if (rouletteManager != null)
+                yield return new WaitUntil(() => rouletteManager.IsResolved);
+
+            // Add bullets to survivors after roulette is done
+            if (rouletteManager != null)
+                rouletteManager.AddBulletsToSurvivors(players);
 
             List<PlayerHand> remaining = GetActivePlayers();
             if (remaining.Count == 1)
@@ -63,13 +76,11 @@ public class RoundManager : MonoBehaviour
         int startSeatIndex = Random.Range(0, active.Count);
         Debug.Log($"[RoundManager] Round starts at seat {active[startSeatIndex].seatIndex}.");
 
-        // Cycle until all players AND dealer are done
         while (!AllPlayersDone() || !dealer.IsDoneForRound)
         {
             active = GetActivePlayers();
             List<PlayerHand> cycleOrder = BuildTurnOrder(active, startSeatIndex);
 
-            // Each player takes one action
             foreach (PlayerHand player in cycleOrder)
             {
                 if (player.IsDoneForRound) continue;
@@ -78,6 +89,7 @@ public class RoundManager : MonoBehaviour
 
                 if (player.seatIndex == humanPlayerIndex)
                 {
+                    _humanTurnActive = true;
                     _waitingForHuman = true;
                     yield return new WaitUntil(() => !_waitingForHuman);
                 }
@@ -92,7 +104,6 @@ public class RoundManager : MonoBehaviour
                 }
             }
 
-            // Dealer takes one action per cycle
             if (!dealer.IsDoneForRound)
             {
                 OnDealerTurnStarted?.Invoke();
@@ -101,9 +112,14 @@ public class RoundManager : MonoBehaviour
             }
         }
 
+        // Resolve hands and queue roulette players
         yield return StartCoroutine(ResolveRound());
 
         ResetAllHands();
+
+        // Run roulette phase — blocks until all pulls are don
+        if (rouletteManager != null)
+            yield return rouletteManager.StartCoroutine(rouletteManager.RunRoulettePhase());
 
         OnRoundComplete?.Invoke();
     }
@@ -127,7 +143,8 @@ public class RoundManager : MonoBehaviour
 
     public void HumanHit()
     {
-        if (!_waitingForHuman) return;
+        if (!_waitingForHuman || !_humanTurnActive) return;
+        _humanTurnActive = false;
         PlayerHand human = players[humanPlayerIndex];
         int card = Random.Range(1, 12);
         Debug.Log($"[{human.playerName}] hits and draws {card}.");
@@ -137,7 +154,8 @@ public class RoundManager : MonoBehaviour
 
     public void HumanStand()
     {
-        if (!_waitingForHuman) return;
+        if (!_waitingForHuman || !_humanTurnActive) return;
+        _humanTurnActive = false;
         players[humanPlayerIndex].Stand();
         _waitingForHuman = false;
     }
@@ -176,6 +194,8 @@ public class RoundManager : MonoBehaviour
             if (!p.IsEliminated && !p.IsDoneForRound) return false;
         return true;
     }
+
+
 
     List<PlayerHand> GetActivePlayers()
     {
