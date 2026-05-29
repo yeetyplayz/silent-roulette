@@ -1,0 +1,2553 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4218698022390206444
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5841295221552666462}
+  m_Layer: 0
+  m_Name: BoekenKastenVerzameling
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5841295221552666462
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4218698022390206444}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.079, y: -1.26, z: 14.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 5147308384486155307}
+  - {fileID: 7913171540226611377}
+  - {fileID: 6277954045047032046}
+  - {fileID: 2094943569921874220}
+  - {fileID: 8130032507181977938}
+  - {fileID: 8102999619714975368}
+  - {fileID: 6082915408253654527}
+  - {fileID: 5498389171595596157}
+  - {fileID: 4163561238338339829}
+  - {fileID: 3823267269018953565}
+  - {fileID: 1611054487623446651}
+  - {fileID: 1820315036916555184}
+  - {fileID: 8328871418767687911}
+  - {fileID: 6766070523226554672}
+  - {fileID: 4169042086028755191}
+  - {fileID: 6288267441048090585}
+  - {fileID: 8979454778557524011}
+  - {fileID: 4555491464470834099}
+  - {fileID: 5312276232248043729}
+  - {fileID: 2136894097438803587}
+  - {fileID: 4202524263329695061}
+  - {fileID: 8821454186409484643}
+  - {fileID: 4811199356875808711}
+  - {fileID: 8245900156323777084}
+  - {fileID: 6457078049343265961}
+  - {fileID: 5045208477926790612}
+  - {fileID: 1907154133376587404}
+  - {fileID: 6268575483796782002}
+  - {fileID: 2111185065293407825}
+  - {fileID: 5830587479124282564}
+  - {fileID: 2218007153832736914}
+  - {fileID: 2931737689959857779}
+  - {fileID: 1980665603346250166}
+  - {fileID: 1517930875232180810}
+  - {fileID: 6435435993608063109}
+  - {fileID: 7821198249524155748}
+  - {fileID: 7893300852485921894}
+  - {fileID: 2465052138960765544}
+  - {fileID: 8450497845114167693}
+  - {fileID: 3638316324407577338}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &137924977244772311
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.3184285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.705908
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &8102999619714975368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 137924977244772311}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &148541119962403256
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1611247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.540001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &8328871418767687911 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 148541119962403256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &248079807101383266
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &7913171540226611377 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 248079807101383266}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &285683568480148323
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.2863035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.018454
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &8245900156323777084 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 285683568480148323}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &351160055499026642
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0208697
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.89639
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &8450497845114167693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 351160055499026642}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &861798218491064380
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (23)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.259
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.014362
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &8821454186409484643 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 861798218491064380}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &938103020287326580
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.901
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &8979454778557524011 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 938103020287326580}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2022963405591055673
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.89639
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &7893300852485921894 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 2022963405591055673}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2095259522831729723
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.89639
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &7821198249524155748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 2095259522831729723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2194323598003174273
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.3071785
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.911545
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &8130032507181977938 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 2194323598003174273}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2410491615625059739
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.17987
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &5830587479124282564 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 2410491615625059739}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2776016999961713073
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.17987
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.379999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &6277954045047032046 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 2776016999961713073}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2800615381960222342
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.12899995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &6288267441048090585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 2800615381960222342}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2839472292114033389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003610611
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &6268575483796782002 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 2839472292114033389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2883860084196855286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.379999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &6457078049343265961 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 2883860084196855286}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2928552190271569671
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.0321302
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &5045208477926790612 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 2928552190271569671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3198875704072746260
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.3071785
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &4811199356875808711 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 3198875704072746260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3205516728574513263
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1611247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.905909
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &6766070523226554672 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 3205516728574513263}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3960714137537312116
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.0208697
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003610611
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &5147308384486155307 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 3960714137537312116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4030477723931255382
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.19113
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &6435435993608063109 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 4030477723931255382}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4044617464863897998
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (26)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.226875
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.018454
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &5312276232248043729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 4044617464863897998}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4236404591957917484
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.3071785
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.711546
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &6082915408253654527 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 4236404591957917484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4456191847742029858
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (20)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.2863035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -16.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &5498389171595596157 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 4456191847742029858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4942516297702848002
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.2863035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -14.544092
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &3823267269018953565 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 4942516297702848002}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5214695384245768874
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.3184285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.905909
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &4163561238338339829 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 5214695384245768874}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5518597354013026491
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.0321302
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &2465052138960765544 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 5518597354013026491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5666085131118656236
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.3184285
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.014362
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &4555491464470834099 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 5666085131118656236}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6121022322124238726
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.2477503
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &4202524263329695061 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 6121022322124238726}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6303642421702715940
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1498749
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.911545
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &4169042086028755191 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 6303642421702715940}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6428394601170005804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.212
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1599998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &2931737689959857779 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 6428394601170005804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6691651653224374313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.9000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &3638316324407577338 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 6691651653224374313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7244434894777436949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.17987
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.89639
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &1517930875232180810 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 7244434894777436949}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7476605077712576804
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (25)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.1611247
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &1611054487623446651 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 7476605077712576804}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7555544634716196079
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.2863035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -12.654091
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &1820315036916555184 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 7555544634716196079}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7702595648077506793
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.17987
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003610611
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &1980665603346250166 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 7702595648077506793}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7777210393192875987
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.053
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.003610611
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &1907154133376587404 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 7777210393192875987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7799782577582151644
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (27)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1889999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -21.018454
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &2136894097438803587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 7799782577582151644}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7821377209922619507
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 5243798797566339639, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 1 (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.2863035
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -18.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0010107071
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.9999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -179.884
+      objectReference: {fileID: 0}
+    - target: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+--- !u!4 &2094943569921874220 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8185751032876798303, guid: 394b8268da5d4a14aa5f63ece9e03eeb, type: 3}
+  m_PrefabInstance: {fileID: 7821377209922619507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8099601967362347585
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.19113
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.1563892
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &2218007153832736914 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 8099601967362347585}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8353068398550568066
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 5841295221552666462}
+    m_Modifications:
+    - target: {fileID: 6543558928926231910, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_Name
+      value: Gevulde boekenkast 2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.19113
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+--- !u!4 &2111185065293407825 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7971477796172704467, guid: 73a15104db3a8814bb577425020f0655, type: 3}
+  m_PrefabInstance: {fileID: 8353068398550568066}
+  m_PrefabAsset: {fileID: 0}
