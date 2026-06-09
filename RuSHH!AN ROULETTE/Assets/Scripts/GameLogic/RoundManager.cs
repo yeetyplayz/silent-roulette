@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Each cycle: every active player gets exactly one action (hit or stand),
-/// then the dealer takes one action. Repeats until all players and dealer are done.
-/// After resolution, waits for roulette to fully complete before starting next round.
+/// Central game loop. Manages betting, turn cycling, dealer, roulette, and reward phases.
 ///
 /// Physical seating layout:
 ///         Dealer
@@ -25,6 +23,10 @@ public class RoundManager : MonoBehaviour
 
     [Header("Roulette")]
     public RouletteManager rouletteManager;
+
+    [Header("Betting")]
+    public BettingManager bettingManager;
+    public BettingUI bettingUI;
 
     private readonly int[] _physicalOrder = { 0, 1, 3, 2 };
 
@@ -48,11 +50,11 @@ public class RoundManager : MonoBehaviour
         {
             yield return StartCoroutine(RunRound());
 
-            // Wait for roulette to fully resolve before checking survivors or continuing
+            // Wait for roulette to fully resolve
             if (rouletteManager != null)
                 yield return new WaitUntil(() => rouletteManager.IsResolved);
 
-            // Add bullets to survivors after roulette is done
+            // Add bullets to survivors
             if (rouletteManager != null)
                 rouletteManager.AddBulletsToSurvivors(players);
 
@@ -69,6 +71,10 @@ public class RoundManager : MonoBehaviour
     IEnumerator RunRound()
     {
         Debug.Log("[RoundManager] --- New Round ---");
+
+        // Betting phase — opens UI, locks camera, waits for confirmation
+        if (bettingUI != null)
+            yield return StartCoroutine(bettingUI.OpenBettingPhase());
 
         DealOpeningHands();
 
@@ -112,12 +118,18 @@ public class RoundManager : MonoBehaviour
             }
         }
 
-        // Resolve hands and queue roulette players
-        yield return StartCoroutine(ResolveRound());
+        // Resolve hands and collect winners/losers for betting
+        List<PlayerHand> winners = new List<PlayerHand>();
+        List<PlayerHand> losers = new List<PlayerHand>();
+        yield return StartCoroutine(ResolveRound(winners, losers));
+
+        // Resolve bets
+        if (bettingManager != null)
+            bettingManager.ResolveBets(winners, losers, dealer.isBust);
 
         ResetAllHands();
 
-        // Run roulette phase — blocks until all pulls are don
+        // Roulette phase
         if (rouletteManager != null)
             yield return rouletteManager.StartCoroutine(rouletteManager.RunRoulettePhase());
 
@@ -160,21 +172,27 @@ public class RoundManager : MonoBehaviour
         _waitingForHuman = false;
     }
 
-    IEnumerator ResolveRound()
+    IEnumerator ResolveRound(List<PlayerHand> winners, List<PlayerHand> losers)
     {
         foreach (PlayerHand player in players)
         {
             if (player.IsEliminated) continue;
+
+            // Skip spectators
+            PlayerWallet wallet = player.GetComponent<PlayerWallet>();
+            if (wallet != null && wallet.IsSpectating) continue;
 
             bool playerWins = dealer.PlayerWinsAgainstDealer(player);
 
             if (playerWins)
             {
                 Debug.Log($"[{player.playerName}] wins this round (hand: {player.handTotal} vs dealer: {dealer.handTotal}).");
+                winners.Add(player);
             }
             else
             {
                 Debug.Log($"[{player.playerName}] loses this round — sent to roulette.");
+                losers.Add(player);
                 OnPlayerSentToRoulette?.Invoke(player);
                 yield return new WaitForSeconds(0.5f);
             }
@@ -188,22 +206,33 @@ public class RoundManager : MonoBehaviour
             if (!p.IsEliminated) p.ResetHand();
     }
 
+
     bool AllPlayersDone()
     {
         foreach (PlayerHand p in players)
-            if (!p.IsEliminated && !p.IsDoneForRound) return false;
+        {
+            if (p.IsEliminated) continue;
+            PlayerWallet wallet = p.GetComponent<PlayerWallet>();
+            if (wallet != null && wallet.IsSpectating) continue;
+            if (!p.IsDoneForRound) return false;
+        }
         return true;
     }
-
-
 
     List<PlayerHand> GetActivePlayers()
     {
         List<PlayerHand> active = new List<PlayerHand>();
         foreach (PlayerHand p in players)
-            if (!p.IsEliminated) active.Add(p);
+        {
+            if (p.IsEliminated) continue;
+            // Skip spectators
+            PlayerWallet wallet = p.GetComponent<PlayerWallet>();
+            if (wallet != null && wallet.IsSpectating) continue;
+            active.Add(p);
+        }
         return active;
     }
+
 
     List<PlayerHand> BuildTurnOrder(List<PlayerHand> active, int startSeatIndex)
     {
@@ -228,5 +257,18 @@ public class RoundManager : MonoBehaviour
         }
 
         return order;
+    }
+
+    public void RestartGame()
+    {
+        // Reset revolvers
+        foreach (PlayerHand player in players)
+        {
+            PlayerRevolver revolver = player.GetComponent<PlayerRevolver>();
+            if (revolver != null) revolver.ResetRevolver();
+        }
+
+        Debug.Log("[RoundManager] Restarting game.");
+        StartCoroutine(RunGame());
     }
 }

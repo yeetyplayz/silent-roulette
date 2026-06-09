@@ -14,6 +14,7 @@ public class TablePeekCamera : MonoBehaviour
     private Vector3 _targetPosition;
     private Quaternion _targetRotation;
     private bool _isPeeking = false;
+    public bool IsBettingPhase = false;
 
     private BlackjackCameraController _fpsController;
 
@@ -28,6 +29,8 @@ public class TablePeekCamera : MonoBehaviour
 
     void Update()
     {
+        if (IsBettingPhase) return;
+
         bool holdingPeek = Input.GetKey(peekKey);
 
         if (holdingPeek && !_isPeeking)

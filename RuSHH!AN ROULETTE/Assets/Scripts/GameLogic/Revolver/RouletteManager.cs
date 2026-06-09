@@ -3,14 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Handles the roulette phase. All players sent to roulette pull simultaneously.
-/// Human player has a time window to pull voluntarily before it fires automatically.
-/// Signals RoundManager when the phase is fully complete via IsResolved.
+/// Handles the roulette phase. The dealer shoots each losing player one by one
+/// in resolution order (whoever lost first gets shot first).
+/// Each player has their own PlayerRevolver with their own bullet count.
+/// The cylinder is respun fresh for each player.
 /// </summary>
 public class RouletteManager : MonoBehaviour
 {
     [Header("Settings")]
+    [Tooltip("Seconds the human has to accept the shot before it fires automatically.")]
     public float forcedPullTimer = 8f;
+
+    [Tooltip("Pause between each player being shot.")]
+    public float timeBetweenShots = 1.5f;
+
+    [Tooltip("How long the red death flash stays on screen.")]
     public float deathFlashDuration = 1.5f;
 
     [Header("References")]
@@ -18,10 +25,9 @@ public class RouletteManager : MonoBehaviour
     public int humanPlayerIndex = 0;
     public UnityEngine.UI.Image deathFlashOverlay;
 
-    // RoundManager polls this to know when roulette is done
     public bool IsResolved { get; private set; } = true;
 
-    private bool _humanPulled = false;
+    private bool _humanAccepted = false;
     private bool _rouletteActive = false;
     private List<PlayerHand> _rouletteQueue = new List<PlayerHand>();
 
@@ -38,10 +44,6 @@ public class RouletteManager : MonoBehaviour
         _rouletteQueue.Add(player);
     }
 
-    /// <summary>
-    /// Called by RoundManager after resolve. Runs the roulette phase and
-    /// sets IsResolved to false until all pulls are done.
-    /// </summary>
     public IEnumerator RunRoulettePhase()
     {
         if (_rouletteQueue.Count == 0)
@@ -53,59 +55,13 @@ public class RouletteManager : MonoBehaviour
         IsResolved = false;
         _rouletteActive = true;
 
-        bool humanInvolved = false;
-        foreach (PlayerHand p in _rouletteQueue)
-        {
-            if (p.seatIndex == humanPlayerIndex)
-            {
-                humanInvolved = true;
-                break;
-            }
-        }
+        Debug.Log($"[RouletteManager] Roulette phase. Dealer will shoot {_rouletteQueue.Count} player(s).");
 
-        Debug.Log($"[RouletteManager] Roulette phase. {_rouletteQueue.Count} player(s) pulling.");
-
-        if (humanInvolved)
-        {
-            _humanPulled = false;
-            Debug.Log($"[RouletteManager] Pull the trigger! ({forcedPullTimer}s before forced pull). Press F.");
-
-            float elapsed = 0f;
-            while (!_humanPulled && elapsed < forcedPullTimer)
-            {
-                elapsed += Time.deltaTime;
-                yield return null;
-            }
-
-            if (!_humanPulled)
-                Debug.Log("[RouletteManager] Time's up — forced pull.");
-        }
-
-        // All queued players pull simultaneously
+        // Shoot each player one by one in resolution order
         foreach (PlayerHand player in _rouletteQueue)
         {
-            PlayerRevolver revolver = player.GetComponent<PlayerRevolver>();
-            if (revolver == null)
-            {
-                Debug.LogWarning($"[RouletteManager] {player.playerName} has no PlayerRevolver component.");
-                continue;
-            }
-
-            bool died = revolver.PullTrigger();
-
-            if (died)
-            {
-                Debug.Log($"[RouletteManager] {player.playerName} is dead.");
-                player.Eliminate();
-
-                if (player.seatIndex == humanPlayerIndex)
-                    yield return StartCoroutine(HumanDeathSequence());
-            }
-            else
-            {
-                Debug.Log($"[RouletteManager] {player.playerName} survived the pull.");
-                player.SurviveRoulette();
-            }
+            yield return StartCoroutine(ShootPlayer(player));
+            yield return new WaitForSeconds(timeBetweenShots);
         }
 
         _rouletteQueue = new List<PlayerHand>();
@@ -113,11 +69,66 @@ public class RouletteManager : MonoBehaviour
         IsResolved = true;
     }
 
-    public void HumanPullTrigger()
+    IEnumerator ShootPlayer(PlayerHand player)
+    {
+        PlayerRevolver revolver = player.GetComponent<PlayerRevolver>();
+        if (revolver == null)
+        {
+            Debug.LogWarning($"[RouletteManager] {player.playerName} has no PlayerRevolver component.");
+            yield break;
+        }
+
+        bool isHuman = player.seatIndex == humanPlayerIndex;
+
+        if (isHuman)
+        {
+            // Human gets a window to accept the shot manually
+            _humanAccepted = false;
+            Debug.Log($"[RouletteManager] The dealer is pointing the gun at you. Press F to accept the shot. ({forcedPullTimer}s)");
+
+            float elapsed = 0f;
+            while (!_humanAccepted && elapsed < forcedPullTimer)
+            {
+                elapsed += Time.deltaTime;
+                yield return null;
+            }
+
+            if (!_humanAccepted)
+                Debug.Log("[RouletteManager] The dealer fires.");
+            else
+                Debug.Log("[RouletteManager] You accepted the shot.");
+        }
+        else
+        {
+            // Brief pause before the dealer shoots an AI player
+            Debug.Log($"[RouletteManager] Dealer aims at {player.playerName}.");
+            yield return new WaitForSeconds(1f);
+        }
+
+        // Pull the trigger
+        bool died = revolver.PullTrigger();
+
+        if (died)
+        {
+            Debug.Log($"[RouletteManager] {player.playerName} has been shot. Eliminated.");
+            player.Eliminate();
+
+            if (isHuman)
+                yield return StartCoroutine(HumanDeathSequence());
+        }
+        else
+        {
+            Debug.Log($"[RouletteManager] {player.playerName} survives the shot. The chamber was empty.");
+            player.SurviveRoulette();
+        }
+    }
+
+    /// <summary>Called by DebugInput when the human presses F during roulette.</summary>
+    public void HumanAcceptShot()
     {
         if (!_rouletteActive) return;
-        _humanPulled = true;
-        Debug.Log("[RouletteManager] Human pulled the trigger.");
+        _humanAccepted = true;
+        Debug.Log("[RouletteManager] Human accepted the shot.");
     }
 
     IEnumerator HumanDeathSequence()

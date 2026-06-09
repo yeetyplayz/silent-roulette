@@ -45,6 +45,8 @@ public class BlackjackCameraController : MonoBehaviour
 
     void Start()
     {
+        enabled = false;
+
         _neutralRotation = transform.rotation;
 
         // Decompose the neutral rotation into yaw/pitch so mouse look starts centred
@@ -54,9 +56,6 @@ public class BlackjackCameraController : MonoBehaviour
         _snapManager = GetComponent<SeatSnapManager>();
         if (_snapManager == null)
             _snapManager = GetComponentInParent<SeatSnapManager>();
-
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
 
     void Update()
@@ -74,6 +73,12 @@ public class BlackjackCameraController : MonoBehaviour
     // -----------------------------------------------------------------------
     void DoMouseLook()
     {
+        void DoMouseLook()
+        {
+            if (!enabled) return;
+            // rest of the method
+        }
+
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
@@ -117,6 +122,13 @@ public class BlackjackCameraController : MonoBehaviour
     public void RestoreTransformToInternalState()
     {
         ApplyRotation(_yaw, _pitch);
+    }
+
+    public void SetInputLocked(bool locked)
+    {
+        enabled = !locked;
+        Cursor.lockState = locked ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = locked;
     }
 
     // -----------------------------------------------------------------------

@@ -9,6 +9,6 @@ public class DebugInput : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.H)) roundManager.HumanHit();
         if (Input.GetKeyDown(KeyCode.S)) roundManager.HumanStand();
-        if (Input.GetKeyDown(KeyCode.F)) rouletteManager.HumanPullTrigger();
+        if (Input.GetKeyDown(KeyCode.F)) rouletteManager.HumanAcceptShot();
     }
 }

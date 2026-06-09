@@ -72,4 +72,11 @@ public class PlayerRevolver : MonoBehaviour
         _currentChamber = Random.Range(0, ChamberCount);
         Debug.Log($"[Revolver] Cylinder shuffled. Starting at chamber {_currentChamber}.");
     }
+
+    public void ResetRevolver()
+    {
+        BulletCount = 1;
+        ShuffleCylinder();
+        Debug.Log("[Revolver] Reset to 1 bullet.");
+    }
 }
