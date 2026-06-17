@@ -32,6 +32,8 @@ public class RoundManager : MonoBehaviour
 
     private bool _waitingForHuman;
     private bool _humanTurnActive = false;
+    public DealingManager dealingManager;
+    public bool useAceAsEleven = true;
 
     public System.Action<int> OnPlayerTurnStarted;
     public System.Action OnDealerTurnStarted;
@@ -76,7 +78,7 @@ public class RoundManager : MonoBehaviour
         if (bettingUI != null)
             yield return StartCoroutine(bettingUI.OpenBettingPhase());
 
-        DealOpeningHands();
+        yield return StartCoroutine(dealingManager.DealOpeningHands(players, dealer, useAceAsEleven));
 
         List<PlayerHand> active = GetActivePlayers();
         int startSeatIndex = Random.Range(0, active.Count);
@@ -134,6 +136,7 @@ public class RoundManager : MonoBehaviour
             yield return rouletteManager.StartCoroutine(rouletteManager.RunRoulettePhase());
 
         OnRoundComplete?.Invoke();
+        if (dealingManager != null) dealingManager.ClearAllCards();
     }
 
     void DealOpeningHands()
