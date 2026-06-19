@@ -26,7 +26,7 @@ public class CardVisual : MonoBehaviour
         Vector3 startPos = landingPos + Vector3.up * dropHeight;
 
         transform.position = startPos;
-        transform.rotation = slot.transform.rotation;
+        transform.rotation = slot.transform.rotation * Quaternion.Euler(90f, 0f, 0f);
 
         // Snap down
         float elapsed = 0f;
@@ -39,6 +39,7 @@ public class CardVisual : MonoBehaviour
         }
 
         transform.position = landingPos;
+        transform.rotation = slot.transform.rotation * Quaternion.Euler(-90f, 0f, 0f);
 
         // Camera shake on landing
         if (cam != null)

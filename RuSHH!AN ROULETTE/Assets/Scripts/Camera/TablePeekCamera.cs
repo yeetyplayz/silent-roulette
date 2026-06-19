@@ -2,29 +2,35 @@ using UnityEngine;
 
 public class TablePeekCamera : MonoBehaviour
 {
-    [Header("Peek Settings")]
-    public float peekHeight = 4f;
-    [Tooltip("Shift the peek position to center the table. Adjust X/Y/Z in play mode until it looks right.")]
-    public Vector3 peekOffset = Vector3.zero;
-    public float transitionSpeed = 5f;
-    public KeyCode peekKey = KeyCode.LeftAlt;
+    [Header("Cameras")]
+    [Tooltip("Your main player camera — stays untouched, just gets enabled/disabled.")]
+    public Camera playerCamera;
 
-    private Vector3 _savedPosition;
-    private Quaternion _savedRotation;
-    private Vector3 _targetPosition;
-    private Quaternion _targetRotation;
-    private bool _isPeeking = false;
+    [Tooltip("A second camera at root level in the Hierarchy positioned exactly where you want the overhead view.")]
+    public Camera overheadCamera;
+
+    [Header("Peek Settings")]
+    public KeyCode peekKey = KeyCode.LeftAlt;
+    public float transitionSpeed = 8f;
+
     public bool IsBettingPhase = false;
 
     private BlackjackCameraController _fpsController;
+    private bool _isPeeking = false;
+    private float _blend = 0f;
 
     void Start()
     {
-        _fpsController = GetComponent<BlackjackCameraController>();
-        _savedPosition = transform.position;
-        _savedRotation = transform.rotation;
-        _targetPosition = transform.position;
-        _targetRotation = transform.rotation;
+        _fpsController = playerCamera != null
+            ? playerCamera.GetComponent<BlackjackCameraController>()
+            : GetComponent<BlackjackCameraController>();
+
+        // Overhead camera starts disabled
+        if (overheadCamera != null)
+            overheadCamera.enabled = false;
+
+        if (playerCamera != null)
+            playerCamera.enabled = true;
     }
 
     void Update()
@@ -36,32 +42,23 @@ public class TablePeekCamera : MonoBehaviour
         if (holdingPeek && !_isPeeking)
         {
             _isPeeking = true;
-            _savedPosition = transform.position;
-            _savedRotation = transform.rotation;
-            _targetPosition = _savedPosition + Vector3.up * peekHeight + peekOffset;
-            _targetRotation = Quaternion.Euler(0f, 0f, 90f);
-            if (_fpsController != null) _fpsController.enabled = false;
+            if (_fpsController != null) _fpsController.SetInputLocked(true);
         }
 
         if (!holdingPeek && _isPeeking)
         {
             _isPeeking = false;
-            _targetPosition = _savedPosition;
-            _targetRotation = _savedRotation;
         }
 
-        transform.position = Vector3.Lerp(transform.position, _targetPosition, transitionSpeed * Time.deltaTime);
-        transform.rotation = Quaternion.Slerp(transform.rotation, _targetRotation, transitionSpeed * Time.deltaTime);
+        float targetBlend = _isPeeking ? 1f : 0f;
+        _blend = Mathf.MoveTowards(_blend, targetBlend, transitionSpeed * Time.deltaTime);
 
-        if (!_isPeeking && _fpsController != null && !_fpsController.enabled)
-        {
-            if (Vector3.Distance(transform.position, _savedPosition) < 0.02f &&
-                Quaternion.Angle(transform.rotation, _savedRotation) < 1f)
-            {
-                transform.position = _savedPosition;
-                transform.rotation = _savedRotation;
-                _fpsController.enabled = true;
-            }
-        }
+        // Swap cameras based on blend threshold
+        if (playerCamera != null) playerCamera.enabled = _blend < 0.5f;
+        if (overheadCamera != null) overheadCamera.enabled = _blend >= 0.5f;
+
+        // Re-enable input once fully back
+        if (!_isPeeking && _fpsController != null && _blend <= 0f)
+            _fpsController.SetInputLocked(false);
     }
 }
