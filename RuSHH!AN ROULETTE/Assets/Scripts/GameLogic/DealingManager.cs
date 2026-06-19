@@ -109,6 +109,19 @@ public class DealingManager : MonoBehaviour
 
         // Instantiate the new card
         GameObject cardObj = Instantiate(card.prefab);
+
+        // Disable physics influence entirely — this card is fully script-driven.
+        // Without this, a non-kinematic Rigidbody on the prefab will fight our
+        // transform control: gravity pulls it through the table, and collision
+        // response overrides the rotation we set from the slot.
+        Rigidbody rb = cardObj.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.isKinematic = true;
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+        }
+
         CardVisual visual = cardObj.AddComponent<CardVisual>();
         _activeCards[seatIndex] = cardObj;
 

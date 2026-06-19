@@ -951,6 +951,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameSystems
       objectReference: {fileID: 0}
+    - target: {fileID: 6582622189441891045, guid: 08eb4d32fdf93744dafd1aac81bbbd6b, type: 3}
+      propertyPath: m_text
+      value: 'Total Pot:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582622189441891045, guid: 08eb4d32fdf93744dafd1aac81bbbd6b, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 96b93ca775218dc4b8de3745643f5881, type: 2}
+    - target: {fileID: 6582622189441891045, guid: 08eb4d32fdf93744dafd1aac81bbbd6b, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6582622189441891045, guid: 08eb4d32fdf93744dafd1aac81bbbd6b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4414626496930891302, guid: 96b93ca775218dc4b8de3745643f5881, type: 2}
+    - target: {fileID: 6582622189441891045, guid: 08eb4d32fdf93744dafd1aac81bbbd6b, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7566047032149168181, guid: 08eb4d32fdf93744dafd1aac81bbbd6b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
