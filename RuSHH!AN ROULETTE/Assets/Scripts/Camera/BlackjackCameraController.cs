@@ -6,8 +6,6 @@
 ///
 /// Controls:
 ///   Mouse        — Free look (constrained to seated range)
-///   1 / 2 / 3   — Snap to look at player seat 1, 2, 3
-///   Tab          — Cycle through seats
 ///   Escape       — Return to forward (dealer) view
 /// </summary>
 public class BlackjackCameraController : MonoBehaviour
@@ -29,6 +27,9 @@ public class BlackjackCameraController : MonoBehaviour
     [Tooltip("Angle threshold (degrees) at which a snap is considered 'arrived'.")]
     public float snapArrivalThreshold = 0.5f;
 
+    [Header("Camera Rig")]
+    public Transform pitchTarget; // assign the PlayerCamera child in Inspector
+
     // The neutral forward rotation (set once at Start so we always know where "dealer" is)
     private Quaternion _neutralRotation;
 
@@ -45,17 +46,25 @@ public class BlackjackCameraController : MonoBehaviour
 
     void Start()
     {
-        enabled = false;
 
-        _neutralRotation = transform.rotation;
+        _neutralRotation = transform.localRotation;
 
         // Decompose the neutral rotation into yaw/pitch so mouse look starts centred
-        _yaw = transform.eulerAngles.y;
+        _yaw = transform.localEulerAngles.y;
         _pitch = 0f;
 
         _snapManager = GetComponent<SeatSnapManager>();
         if (_snapManager == null)
             _snapManager = GetComponentInParent<SeatSnapManager>();
+    }
+
+    public void ResetNeutralRotation()
+    {
+        _neutralRotation = transform.rotation;
+        _yaw = transform.localEulerAngles.y;
+        _pitch = 0f;
+        if (pitchTarget != null)
+            pitchTarget.localRotation = Quaternion.identity;
     }
 
     void Update()
@@ -73,11 +82,6 @@ public class BlackjackCameraController : MonoBehaviour
     // -----------------------------------------------------------------------
     void DoMouseLook()
     {
-        void DoMouseLook()
-        {
-            if (!enabled) return;
-            // rest of the method
-        }
 
         float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
         float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
@@ -192,7 +196,11 @@ public class BlackjackCameraController : MonoBehaviour
     // -----------------------------------------------------------------------
     void ApplyRotation(float yaw, float pitch)
     {
-        transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
+        // Parent handles yaw only
+        transform.localRotation = Quaternion.AngleAxis(yaw, Vector3.up);
+        // Child handles pitch only
+        if (pitchTarget != null)
+            pitchTarget.localRotation = Quaternion.AngleAxis(pitch, Vector3.right);
     }
 
     /// Converts Unity's 0-360 euler X back to -180..180 so pitch clamp works correctly.

@@ -85,7 +85,7 @@ public class GameOverUI : MonoBehaviour
         roundManager.dealer.ResetHand();
 
         // Re-enable camera
-        if (cameraController != null) cameraController.enabled = false;
+        if (cameraController != null) cameraController.SetInputLocked(false);
         if (peekCamera != null) peekCamera.IsBettingPhase = false;
 
         yield return null;

@@ -107,7 +107,7 @@ public class RoundManager : MonoBehaviour
                     if (ai != null)
                     {
                         yield return new WaitForSeconds(0.8f);
-                        ai.TakeTurn();
+                        yield return StartCoroutine(ai.TakeTurn());
                     }
                 }
             }
@@ -161,9 +161,8 @@ public class RoundManager : MonoBehaviour
         if (!_waitingForHuman || !_humanTurnActive) return;
         _humanTurnActive = false;
         PlayerHand human = players[humanPlayerIndex];
-        int card = Random.Range(1, 12);
-        Debug.Log($"[{human.playerName}] hits and draws {card}.");
-        human.AddCard(card);
+        Debug.Log($"[{human.playerName}] hits.");
+        StartCoroutine(dealingManager.DealHitCard(human, useAceAsEleven));
         _waitingForHuman = false;
     }
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using static UnityEngine.LowLevelPhysics2D.PhysicsLayers;
+using System.Collections;
 
 /// <summary>
 /// AI decision logic for the 3 non-human players.
@@ -17,37 +18,36 @@ public class AIPlayerHand : PlayerHand
     [Range(0f, 0.3f)]
     public float earlyStandChance = 0.1f;
 
+    public DealingManager dealingManager;
+    public bool useAceAsEleven = true;
+
     /// <summary>
     /// Called by RoundManager when it is this AI's turn.
     /// Returns true if the AI chose to hit, false if it stood.
     /// </summary>
-    public bool TakeTurn()
+    public IEnumerator TakeTurn()
     {
-        if (IsDoneForRound) return false;
+        if (IsDoneForRound) yield break;
 
-        // Always hit on low totals
         if (handTotal < 12)
         {
-            HitWithRandomCard();
-            return true;
+            yield return StartCoroutine(dealingManager.DealHitCard(this, useAceAsEleven));
+            yield break;
         }
 
-        // Stand if at or above threshold
         if (handTotal >= standThreshold)
         {
             Stand();
-            return false;
+            yield break;
         }
 
-        // Between 12 and threshold — small chance to stand early for variance
         if (Random.value < earlyStandChance)
         {
             Stand();
-            return false;
+            yield break;
         }
 
-        HitWithRandomCard();
-        return true;
+        yield return StartCoroutine(dealingManager.DealHitCard(this, useAceAsEleven));
     }
 
     private void HitWithRandomCard()

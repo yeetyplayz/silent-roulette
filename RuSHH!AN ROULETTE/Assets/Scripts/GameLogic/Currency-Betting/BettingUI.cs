@@ -94,19 +94,43 @@ public class BettingUI : MonoBehaviour
         bettingPanel.SetActive(false);
 
         Debug.Log($"[BettingUI] Unlocking camera. Controller null: {cameraController == null}");
-        if (cameraController != null) cameraController.SetInputLocked(false);
+        if (cameraController != null)
+        {
+            cameraController.enabled = true;
+            cameraController.SetInputLocked(false);
+            cameraController.ResetNeutralRotation();
+        }
         Debug.Log("[BettingUI] Unlock called.");
 
         // Lock cursor and re-enable camera
-        if (cameraController != null) cameraController.SetInputLocked(false);
+        if (cameraController != null)
+        {
+            cameraController.enabled = true;
+            cameraController.SetInputLocked(false);
+            cameraController.ResetNeutralRotation();
+        }
         if (peekCamera != null) peekCamera.IsBettingPhase = false;
 
         Debug.Log($"[BettingUI] Unlocking camera. Controller null: {cameraController == null}");
-        if (cameraController != null) cameraController.SetInputLocked(false);
+        if (cameraController != null)
+        {
+            cameraController.enabled = true;
+            cameraController.SetInputLocked(false);
+            cameraController.ResetNeutralRotation();
+        }
         Debug.Log("[BettingUI] Unlock called.");
 
+        if (cameraController != null)
+        {
+            cameraController.SetInputLocked(false);
+            cameraController.ResetNeutralRotation();
+        }
+
         bettingManager.OnAllBetsPlaced?.Invoke();
+
     }
+
+
 
     // -----------------------------------------------------------------------
     //  Button handlers
