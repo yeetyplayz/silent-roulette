@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 /// <summary>
 /// Central game loop. Manages betting, turn cycling, dealer, roulette, and reward phases.
 ///
@@ -28,6 +29,8 @@ public class RoundManager : MonoBehaviour
     public BettingManager bettingManager;
     public BettingUI bettingUI;
 
+    public RoundCounter roundCounter;
+
     private readonly int[] _physicalOrder = { 0, 1, 3, 2 };
 
     private bool _waitingForHuman;
@@ -40,6 +43,10 @@ public class RoundManager : MonoBehaviour
     public System.Action<PlayerHand> OnPlayerSentToRoulette;
     public System.Action OnRoundComplete;
     public System.Action<PlayerHand> OnGameWon;
+
+    public SeatLightManager seatLightManager;
+
+    public ActionTooltipManager actionTooltipManager;
 
     void Start()
     {
@@ -74,6 +81,8 @@ public class RoundManager : MonoBehaviour
     {
         Debug.Log("[RoundManager] --- New Round ---");
 
+        if (roundCounter != null) roundCounter.IncrementRound();
+
         // Betting phase — opens UI, locks camera, waits for confirmation
         if (bettingUI != null)
             yield return StartCoroutine(bettingUI.OpenBettingPhase());
@@ -106,8 +115,18 @@ public class RoundManager : MonoBehaviour
                     AIPlayerHand ai = player as AIPlayerHand;
                     if (ai != null)
                     {
-                        yield return new WaitForSeconds(0.8f);
+                        yield return new WaitForSeconds(2.5f);
                         yield return StartCoroutine(ai.TakeTurn());
+
+                        if (actionTooltipManager != null)
+                        {
+                            if (ai.hasStood)
+                                actionTooltipManager.OnPlayerStand(ai.seatIndex, ai.playerName);
+                            else if (ai.isBust)
+                                actionTooltipManager.OnPlayerBust(ai.seatIndex, ai.playerName);
+                            else
+                                actionTooltipManager.OnPlayerHit(ai.seatIndex, ai.playerName);
+                        }
                     }
                 }
             }
@@ -117,6 +136,16 @@ public class RoundManager : MonoBehaviour
                 OnDealerTurnStarted?.Invoke();
                 yield return new WaitForSeconds(0.8f);
                 dealer.TakeOneAction();
+            }
+
+            if (actionTooltipManager != null)
+            {
+                if (dealer.isBust)
+                    actionTooltipManager.OnDealerBust();
+                else if (dealer.IsDoneForRound)
+                    actionTooltipManager.OnDealerStand();
+                else
+                    actionTooltipManager.OnDealerHit();
             }
         }
 
@@ -131,7 +160,11 @@ public class RoundManager : MonoBehaviour
 
         ResetAllHands();
 
+        if (actionTooltipManager != null) actionTooltipManager.HideAll();
+
         // Roulette phase
+        if (seatLightManager != null) seatLightManager.TurnAllOff();
+
         if (rouletteManager != null)
             yield return rouletteManager.StartCoroutine(rouletteManager.RunRoulettePhase());
 
@@ -263,6 +296,7 @@ public class RoundManager : MonoBehaviour
 
     public void RestartGame()
     {
+        roundCounter.ResetRound();
         // Reset revolvers
         foreach (PlayerHand player in players)
         {

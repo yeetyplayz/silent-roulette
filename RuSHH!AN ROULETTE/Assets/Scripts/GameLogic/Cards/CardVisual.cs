@@ -13,7 +13,7 @@ public class CardVisual : MonoBehaviour
 
     [Header("Camera Shake")]
     public float shakeDuration = 0.15f;
-    public float shakeMagnitude = 0.03f;
+    public float shakeMagnitude = 0.8f;
 
     /// <summary>
     /// Play the drop animation onto the given slot.
@@ -54,8 +54,9 @@ public class CardVisual : MonoBehaviour
         while (elapsed < shakeDuration)
         {
             elapsed += Time.deltaTime;
-            float x = Random.Range(-1f, 1f) * shakeMagnitude;
-            float y = Random.Range(-1f, 1f) * shakeMagnitude;
+            float strength = (1f - elapsed / shakeDuration) * shakeMagnitude;
+            float x = Mathf.Sin(elapsed * 80f) * strength;
+            float y = Mathf.Sin(elapsed * 60f) * strength;
             cam.transform.localPosition = new Vector3(
                 originalPos.x + x,
                 originalPos.y + y,
